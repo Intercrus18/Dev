@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Grabient</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- BLOCK LEFT -->
+
+        <div class="block-left">
+            <header class="bl-header">
+                <a href="#" class="logo-a">
+                    <div class="logo">
+                        <div class="logo-img">
+                            <img src="img/logo-mini.png" alt="logo-mini">
+                        </div>
+                        <div class="logo-text">
+                            <p>grabient</p>
+                        </div>
+                    </div>
+                </a>
+            </header>
+            <main>
+                <h1 class="bl-main-h1" id="h">Making Gradients Great Again</h1>
+                <p class="bl-main-p" id="p">Hand crafting unique world most beautiful gradients for your personal as well as commercial projects. For a low cost of zero dollar and</p>
+                <div class="get-started">
+                    <form action="#" class="form">
+                        <button class="btn">Get Started
+                            <div class="circle">
+                            <img src="img/triangle.png" alt="" class="triangle">
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                <p class="footer-easy">easy start</p>
+                <p class="footer-auto">Auto-generate or Create From Scratch*</p>
+            </footer>
+        </div>
+
+        <!-- BLOCK RIGHT -->
+
+        <div class="block-right">
+           <header>
+               <nav class="br-nav">
+                    <ul class="br-ul">
+                        <li><a href="#" class="toggle">Explore</a></li>
+                        <li><a href="#" class="toggle">News</a></li>
+                        <li><a href="#" class="toggle">Developers</a></li>
+                        <li><a href="#" class="toggle">Designers</a></li>
+                    </ul>
+               </nav>
+           </header>
+           <main>
+               <div class="br-logo">
+                   <img src="img/logo-big.png" alt="">
+               </div>
+           </main>
+        </div>
+    </div>
+    <script>
+        function() {
+            let x = getElementById('h')
+            x.style.color = rgb(0,0,0); 
+        }
+
+        var myBtn = document.querySelector('.h')
+
+            myBtn.addEventListener('click', function(){
+            let chc1 = getElementById('h');
+                chc1.style.color = rgb(0,0,0);
+        })
+    </script>
+</body>
+</html>

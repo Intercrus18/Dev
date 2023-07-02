@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    width: 1600px;
+    display: flex;
+    margin: auto;
+}
+
+/* BLOCK LEFT */
+
+.block-left {
+    float: left;
+    width: 756px;
+    height: 1200px;
+    background-color: #fff;
+}
+
+.block-right {
+    float: right;
+    width: 846px;
+    height: 1200px;
+    background-image: url(../img/bg-right.png);
+}
+
+.logo-a {
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 64px;
+    margin-top: 60px;
+    display: flex;
+}
+
+
+.logo .logo-text {
+    margin: 0px 0 0px 16px;
+    font-weight: bold;
+    font-size: 31px;
+    color: #584B66;
+}
+
+.bl-main-h1 {
+    margin: 226px 94px 60px 101px;
+    font-size: 90px;
+    font-weight: bold;
+    color:#584B66;
+    line-height: 90px;
+}
+
+.bl-main-p {
+    margin: 0 158px 112px 103px;
+    font-size: 20px;
+    font-weight: medium;
+    color:#958D9E;
+}
+
+.get-started {
+    margin: 0 311px 184px 104px;
+    width: 341px;
+    height: 78px;
+}
+
+.get-started form {
+    display: flex;
+}
+
+.btn {
+    background-image: url(../img/btn.png);
+    width: 243px;
+    height: 70px;
+    border: none;
+    font-size:22px;
+    font-weight: bold;
+    color:#FEFEFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    padding-left: 60px;
+
+}
+.btn-circle {
+    border:none;
+}
+.circle {
+    position: absolute;
+    left: 270px;
+    display: flex;
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    background-color:#EAE6EF;
+}
+
+.triangle {
+    margin: auto;
+}
+
+footer {
+    background-color:#E4E1E8;
+    height: 96px;
+    display: flex;
+    
+}
+
+.footer-easy {
+    padding-top: 40px;
+    margin: 0 77px 40px 104px;
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-auto {
+    color:#7F768A;
+    font-size:19px;
+    margin: 40px 50px 40px 0;
+
+}
+
+
+/* BLOCK RIGHT */
+
+.br-nav {
+    margin: 72px 124px 0 242px;
+
+}
+
+.br-ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.br-ul li {
+    list-style: none;
+    
+}
+
+.br-ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size:20px;
+    font-weight: medium;
+}
+
+.br-ul li a:hover {
+    padding-bottom: 6px;
+    border-bottom: 4px solid #FFBC31;
+}
+
+.br-logo {
+    margin: 335px 250px 427px 250px;
+}
+
+button {
+    background-color: #fff;
+}

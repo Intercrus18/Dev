@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto-Regular, sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    width: 1600px;
+    height: 900px;
+    margin: auto;
+    background-image: url(../img/bg.jpg);
+}
+
+.header {
+    padding-top: 67px;
+    margin-left: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 602px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.list-item {
+    float: left;
+    margin-right: 60px;
+}
+
+.list-link {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.search {
+    padding: 9px 0 9px 16px;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 15px;
+    
+}
+
+.search::placeholder {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.main {
+    margin-top: 255px;
+    display: flex;
+}
+
+.main-header {
+    margin-left: 500px;
+    text-transform: uppercase;
+    font-size: 120px;
+    color: #FFFFFF;
+}
+
+.main-descr {
+    margin-top: 31px;
+    margin-left: 506px;
+    font-size: 17px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 120px;
+    margin-left: 748px;
+    padding: 17px 30px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.search-arrow {
+    margin-left: 10px;
+}
+
+.soc-icons {
+    margin-top: 65px;
+    margin-left: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-link {
+    margin-bottom: 50px;
+}
+
+.footer{
+    margin-top: 70px;
+    display: flex;
+}
+
+.footer-btn {
+    padding: 26px;
+    background-color: #fff;
+}
+
+.right-block {
+    margin-left: 1235px;
+    display: flex;
+}
+
+.rb-header {
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.rb-descr {
+    margin-top: 19px;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.vert-line {
+    width: 7px;
+    height: 71px;
+    background-color: #fff;
+    -webkit-writing-mode: vertical-rl; 
+    writing-mode:tb-rl;
+    margin-right: 9px;
+}
+
+.vert-text {
+    color: #FFFFFF;
+    font-size: 12px;
+    -webkit-writing-mode: vertical-rl; 
+    writing-mode:tb-rl;
+    font-weight: 600;
+}
