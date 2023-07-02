@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfSec - все статьи</title>
+    <link rel="icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center header-navbar">
+                <div class="col-2">
+                    <a href="../index.html" class="logo-link">
+                        <img src="../img/icons/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- /.col -->
+                <div class="col-4">
+                    <nav class="nav">
+                        <ul class="menu d-flex">
+                            <li class="menu-item"><a href="../articles.html" class="menu-link">Статьи</a></li>
+                            <li class="menu-item"><a href="../courses.html" class="menu-link">Курсы</a></li>
+                            <li class="menu-item"><a href="../" class="menu-link">Тесты</a></li>
+                            <li class="menu-item"><a href="" class="menu-link" id="random-link">Случайное</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.col -->
+                <div class="col d-flex justify-content-end align-items-center">
+                    <div class="icons">
+                        <a href="#" class="icon-link"><img src="../img/icons/vk-icon.svg" alt="icon vk link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/youtube-icon.svg" alt="icon youtube link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/fb-icon.svg" alt="icon fb link" class="icon-img"></a>
+                    </div>
+                    <div class="input-group">
+                        <input type="search" class="form-control rounded" placeholder="Искать здесь..." aria-label="Search"
+                          aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-primary search-btn">Искать</button>
+                      </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </header>
+    <main class="articles-main">
+        <div class="container">
+            <div class="row articles-row-wrapper">
+                <div class="col-3 articles-col-sidebar">
+                    <h2 class="articles-sidebar-title d-flex justify-content-center">Популярные статьи</h2>
+                    <div class="articles-col-blocks d-flex align-items-center flex-column">
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art1.jpeg" alt="" class="articles-block-image">
+                            <a href="article1.html" class="articles-block-descr">Усиливаем безопасность парольных политик Microsoft</a>
+                        </div>
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art2.jpg" alt="" class="articles-block-image">
+                            <a href="article2.html" class="articles-block-descr">Как собрать данные при расследовании киберинцидентов</a>
+                        </div>
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art3.jpg" alt="" class="articles-block-image">
+                            <a href="article3.html" class="articles-block-descr">Классификация данных как фундамент ИБ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 articles-col-main">
+                    <h2 class="row articles-main-title d-flex justify-content-center">Часто задаваемые вопросы об утечках</h2>
+                    <div class="row articles-main-courses">
+                        <p>Утечка баз данных сегодня является одной из самых опасных киберугроз. Она включает в себя действия лиц, которым удалось заполучить права доступа к информации и таким образом нарушить ее конфиденциальность. Подобные действия могут быть преднамеренными (промышленный саботаж, шпионаж), или же база данных может быть обнаружена исследователем безопасности, не преследующим корыстных целей.</p>
+                        <p>Иногда базы данных целых компаний попадают в открытый доступ по невнимательности сотрудников, в то время как руководство даже не подозревает, что данные их клиентов или сотрудников находятся в зоне риска.</p>
+                        <h3>Как можно получить базы данных?</h3>
+                        <p>Слив или утечка базы данных означает, что доступ к чувствительной информации может получить практически любой пользователь. Утечки происходят в результате того, что базы данных не были изъяты из открытого доступа или надежно защищены.</p>
+                        <p>Нередко сотрудники различных компаний и учреждений сами продают базы данных или доступ к ним. Также существует множество способов взлома «благодаря» ошибкам в конфигурации серверов баз данных.</p>
+                        <p>Еще одна причина сливов критической информации – человеческий фактор, ошибка или халатность сотрудников.</p>
+                        <p>По каждой из этих причин в общем доступе регулярно оказываются базы данных интернет-магазинов, офлайн-магазинов, банков, страховых компаний, турфирм, медицинских учреждений. А дальнейшее развитие событий зависит от того, кто обнаружил открытую базу данных первым – исследователи безопасности или злоумышленники.</p>
+                        <h3>Кому нужны чужие базы данных?</h3>
+                        <p>Во-первых, за информацией охотятся «ресейлеры», злоумышленники, которые выставляют объявления о продаже на площадках в Dark Web. Во-вторых, базы данных всегда пригодятся для более точной настройки таргетированной рекламы тем, кто хочет продать свой товар или услуги. И, в-третьих, базы данных безусловно нужны мошенникам, чтобы заполучить детальную информацию о своих потенциальных жертвах.</p>
+                        <p>Личная информация — это база, на которой строятся атаки социальной инженерии. Чем больше знает злоумышленник, тем легче ему войти в доверие к жертве и заставить ее совершить нужные действия: выдать еще больше информации для дальнейшей атаки или назвать цифры из полученной смски и перевести деньги злоумышленнику.</p>
+                        <h3>Сколько стоят базы данных?</h3>
+                        <p>В последние годы на базы данных наблюдается высокий спрос, что, конечно, сказывается и на их стоимости. По результатам отчета по ценам черного рынка «пробива», самый популярный товар — это данные банковского сектора.</p>
+                        <p>Информация о физических лицах-клиентах банка стоит от 5 до 35 тыс.руб. Данные о клиентах мобильных операторов можно приобрести от 400 руб. до 45 тыс. руб.</p>
+                        <h3>Как случаются утечки?</h3>
+                        <p>С каждым годом появляется все больше новостей об утечках информации. Раскрытие конфиденциальной информации влечет за собой крайне неприятные последствия: ущерб репутации, финансовые потери, а иногда и утрату интеллектуальной собственности.</p>
+                        <p>Основными пользователями слитых баз данных являются мошенники, применяющие методы социальной инженерии, и сотрудники колл-центров компаний, практикующих агрессивный маркетинг.</p>
+                        <p>Поскольку объем данных, попавших в открытый доступ, постоянно растет, своевременное выявление и предотвращение инцидентов стало одной из наиболее серьезных проблем информационной безопасности. Чтобы снизить риск утечки данных, необходимо понимать, откуда исходит угроза. Существует два основных фактора риска — люди и устройства.</p>
+                        <h3>Как принципиально избежать утечек?</h3>
+                        <p>азовые меры для снижения риска утечки данных на корпоративном уровне, с которых следует начать: обучение и оперативное информирование сотрудников, управление доступом к данным и обеспечение своевременного обнаружения проблемы. Если в штате имеются профессионалы, отвечающие за информационную безопасность, и надежные процессы для предотвращения ошибок пользователя, риск утечки может быть сведен к минимуму.</p>
+                        <p>При этом среднестатистический пользователь едва ли может повлиять на факт утечек данных о себе. Сменить имя и больше нигде не оставлять свои персональные данные — это трудно реализуемый вариант. Поэтому будьте бережны к своим данным, в некоторых случаях можно воспользоваться псевдонимом или создать отдельный почтовый ящик.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-row d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Согласие на обработку данных</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Служба поддержки</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="row footer-row">
+                <div class="col d-flex justify-content-center pt-3 footer-copyright">&copy; infsec.site, 2021 | InfSec - онлайн-ресурс для обучения информационной безопасности</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

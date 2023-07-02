@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfSec - все статьи</title>
+    <link rel="icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center header-navbar">
+                <div class="col-2">
+                    <a href="../index.html" class="logo-link">
+                        <img src="../img/icons/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- /.col -->
+                <div class="col-4">
+                    <nav class="nav">
+                        <ul class="menu d-flex">
+                            <li class="menu-item"><a href="../articles.html" class="menu-link">Статьи</a></li>
+                            <li class="menu-item"><a href="../courses.html" class="menu-link">Курсы</a></li>
+                            <li class="menu-item"><a href="../tests.html" class="menu-link">Тесты</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Случайное</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.col -->
+                <div class="col d-flex justify-content-end align-items-center">
+                    <div class="icons">
+                        <a href="#" class="icon-link"><img src="../img/icons/vk-icon.svg" alt="icon vk link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/youtube-icon.svg" alt="icon youtube link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/fb-icon.svg" alt="icon fb link" class="icon-img"></a>
+                    </div>
+                    <div class="input-group">
+                        <input type="search" class="form-control rounded" placeholder="Искать здесь..." aria-label="Search"
+                          aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-primary search-btn">Искать</button>
+                      </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </header>
+    <main class="articles-main">
+        <div class="container">
+            <div class="row articles-row-wrapper">
+                <div class="col-3 articles-col-sidebar">
+                    <h2 class="articles-sidebar-title d-flex justify-content-center">Популярные статьи</h2>
+                    <div class="articles-col-blocks d-flex align-items-center flex-column">
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art3.jpg" alt="" class="articles-block-image">
+                            <a href="article3.html" class="articles-block-descr">Классификация данных как фундамент ИБ</a>
+                        </div>
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art2.jpg" alt="" class="articles-block-image">
+                            <a href="article2.html" class="articles-block-descr">Как собрать данные при расследовании киберинцидентов</a>
+                        </div>
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art4.jpg" alt="" class="articles-block-image">
+                            <a href="article4.html" class="articles-block-descr">Часто задаваемые вопросы об утечках</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 articles-col-main">
+                    <h2 class="row articles-main-title d-flex justify-content-center">Усиливаем безопасность парольных политик Microsoft</h2>
+                    <div class="row articles-main-courses">
+                        <p>Microsoft делает многое для безопасности Windows и своих корпоративных клиентов. Но её усилия остаются недостаточными. Корпорация игнорирует рекомендации NIST по парольным политикам, а её собственные указания в различных документах противоречат друг другу. Поэтому необходимо использовать дополнительные средства, например интегрировать в контроллер домена сторонние решения, позволяющие добиться выполнения требований международных стандартов.</p>
+                        <h3>Введение</h3>
+                        <p>В наше время компании постоянно совершенствуют политику и средства кибербезопасности: строят SIEM-системы, укрепляют периметры сетей, разбирают и изучают сетевые пакеты «на лету», следят за состоянием безопасности в режиме реального времени. Безопасность обрастает автоматизацией, решаются проблемы открытых «дыр» в программном обеспечении. Однако о фундаментальных аспектах безопасности не стоит забывать. Парольная защита остаётся открытым вопросом, и по сей день находятся уязвимости связанные с некачественной его проработкой.</p>
+                        <h3>Пароли в 2021 году</h3>
+                        <p>Уже давно не новость, что на смену паролям приходят более сложные методы аутентификации: токены, ключи, биометрия... Однако этим, как правило, защищается исключительно критическая инфраструктура компании. Например, в разработке тест- и стейдж-серверы защищаются паролями. Для компаний авторизация в системе межведомственного электронного взаимодействия (СМЭВ) и единой системе идентификации и аутентификации (ЕСИА) определяется по сертификату и кодовому слову (тот же пароль).</p>
+                        <p>Если не брать в расчёт большие инфраструктуры, то в среднем бизнесе документы и архивы защищаются паролями. Малый сегмент тоже без этого не обходится: редко где можно увидеть вход в 1С по токену. И даже Basic Auth первичной настройки веб-сервера остаётся популярным и по сей день.</p>
+                        <p>Если не брать в расчёт большие инфраструктуры, то в среднем бизнесе документы и архивы защищаются паролями. Малый сегмент тоже без этого не обходится: редко где можно увидеть вход в 1С по токену. И даже Basic Auth первичной настройки веб-сервера остаётся популярным и по сей день.</p>
+                        <p>Заявление Microsoft о FIDO2 и «2021 без паролей» — слишком уж громкое, учитывая то, что корпорация очень часто отзывает обновления и ставит заплатки для дальнейшей работы операционных систем. Эта технология будет ещё оттачиваться, и ей придётся пройти суровую проверку в реальности</p>
+                        <p>Если смотреть в сторону частного использования, то появилась двухфакторная аутентификация, где человек уже физически привязан к номеру телефона или аккаунту сети, но это лишь упрощает смену пароля и даёт более глубокую защиту. На передовой — снова связка логина и пароля.</p>
+                        <p>Если быть уж совсем откровенными, не все организации и физические лица идут в ногу со временем. Статистика использования операционных систем показывает, что Windows 7, поддержка которой закончилась ещё в начале 2020 года, до сих пор популярна (ей пользуется чуть более 20 % от общей массы пользователей).</p>
+                        <p>Вышеперечисленные аргументы показывают, что парольная защита не умирает, а подкрепляется дополнительными функциями. Она капитально оседает в нашей жизни. Альтернативы, которая пришла бы на замену и стёрла эту технологию, ещё не придумали.</p>
+                        <h3>Защитные меры</h3>
+                        <p>«Политика парольной защиты организации» стала универсальным документом, который требуется практически в любом случае, где на горизонте стоят регуляторы и проверяющие органы — и неспроста.</p>
+                        <p>Этот документ необходимо не только скачать и прочитать, но и внимательно проработать, после чего запустить применение его требований в производственные процессы. Ведь каждый пентестер знает цену слабого пароля.</p>
+                        <p>Любая площадка для тренировок пентестера, похожая на сеть реальной организации (например, Pentestit), не упускает возможности показать, что на серверы можно проникнуть получив пароль методом брутфорса.</p>
+                        <p>Отсюда следует, что задача DevOps (DevSecOps), специалиста по ИБ или системного администратора — не упустить данный факт из виду и как следует подготовиться.</p>
+                        <p>Применительно к Microsoft AD можно использовать стороннее программное обеспечение, например Specops Password Auditor, nFront Password Filter, ManageEngine или Anixis. При большом желании, как упоминалось выше, можно заменить passfilt.dll на коммерческие проекты или написать свою библиотеку, как это сделал Yelp. Один из вариантов — воспользоваться онлайн-сервисом Pwned Passwords: на его API построено большое количество проектов под разные задачи. Также можно включить в парольную политику обязательную предварительную проверку своего пароля на этом сервисе.</p>
+                        <p>Большую роль в организации кибербезопасности играет настройка аппаратного и программного обеспечения. Не стоит надеяться, что за вас уже всё настроили. За правило надо взять: «по умолчанию — небезопасно». Не только настройка GPO Microsoft «хромает на эту ногу». Любая связка логина со сложным паролем будет надёжнее, чем приходящий на телефон PIN-код из 4 цифр с возможностью ввести его бесчисленное количество раз, как это было на Cisco ASA.</p>
+                        <p>Оценка происходящего в режиме реального времени тоже пойдёт на руку любому администратору. 20 лет назад простого пароля в 4–6 символов было достаточно; сегодня нормой считается не менее 8 символов с использованием разных регистров и всевозможных дополнительных знаков. Мир стал более динамичным, и под него необходимо адаптироваться всё быстрее.</p>
+                        <p>Каждая система безопасности должна быть настроена до состояния нерентабельности её взлома. Это правило распространяется и на пароли.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-row d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Согласие на обработку данных</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Служба поддержки</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="row footer-row">
+                <div class="col d-flex justify-content-center pt-3 footer-copyright">&copy; infsec.site, 2021 | InfSec - онлайн-ресурс для обучения информационной безопасности</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

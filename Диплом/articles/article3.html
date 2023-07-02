@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfSec - все статьи</title>
+    <link rel="icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center header-navbar">
+                <div class="col-2">
+                    <a href="../index.html" class="logo-link">
+                        <img src="../img/icons/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- /.col -->
+                <div class="col-4">
+                    <nav class="nav">
+                        <ul class="menu d-flex">
+                            <li class="menu-item"><a href="../articles.html" class="menu-link">Статьи</a></li>
+                            <li class="menu-item"><a href="../courses.html" class="menu-link">Курсы</a></li>
+                            <li class="menu-item"><a href="../tests.html" class="menu-link">Тесты</a></li>
+                            <li class="menu-item"><a href="" class="menu-link" id="random-link">Случайное</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.col -->
+                <div class="col d-flex justify-content-end align-items-center">
+                    <div class="icons">
+                        <a href="#" class="icon-link"><img src="../img/icons/vk-icon.svg" alt="icon vk link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/youtube-icon.svg" alt="icon youtube link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/fb-icon.svg" alt="icon fb link" class="icon-img"></a>
+                    </div>
+                    <div class="input-group">
+                        <input type="search" class="form-control rounded" placeholder="Искать здесь..." aria-label="Search"
+                          aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-primary search-btn">Искать</button>
+                      </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </header>
+    <main class="articles-main">
+        <div class="container">
+            <div class="row articles-row-wrapper">
+                <div class="col-3 articles-col-sidebar">
+                    <h2 class="articles-sidebar-title d-flex justify-content-center">Популярные статьи</h2>
+                    <div class="articles-col-blocks d-flex align-items-center flex-column">
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art1.jpeg" alt="" class="articles-block-image">
+                            <a href="article1.html" class="articles-block-descr">Усиливаем безопасность парольных политик Microsoft</a>
+                        </div>
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art2.jpg" alt="" class="articles-block-image">
+                            <a href="article2.html" class="articles-block-descr">Как собрать данные при расследовании киберинцидентов</a>
+                        </div>
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art4.jpg" alt="" class="articles-block-image">
+                            <a href="article4.html" class="articles-block-descr">Часто задаваемые вопросы об утечках</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 articles-col-main">
+                    <h2 class="row articles-main-title d-flex justify-content-center">Классификация данных как фундамент ИБ</h2>
+                    <div class="row articles-main-courses">
+                        <p>Бизнес выделяет немалые бюджеты на кибербезопасность, но количество утечек конфиденциальной информации только растет. Тому есть множество причин, и сегодня я расскажу об одной из важнейших – отсутствии актуальной классификации данных.</p>
+                        <p>Необходимость разложить цифровую информацию по полочкам, на первый взгляд, с безопасностью не связана, но на самом деле это не так.</p>
+                        <p>Простой пример: в среднестатистическом файловом хранилище со временем образуется сложная структура каталогов, в которых лежит множество документов.</p>
+                        <p>Кто и куда их складывает, не всегда известно даже администраторам. Тем более непонятно, как настраивать и контролировать доступ пользователей к этому богатству.</p>
+                        <p>На каждый файл и каждую папку отдельно права не раздашь, а если вручную вести гигантские Access Lists, неизбежны ошибки. К тому же сотрудники имеют привычку складывать все в первое попавшееся место, не задумываясь о конфиденциальности.</p>
+                        <h3>Насколько все плохо?</h3>
+                        <p>По данным нашего исследования, сотруднику в среднем доступны миллионы корпоративных файлов. Точное значение показателя зависит от размера и специфики бизнеса, но порядок именно таков, а в ряде случаев речь идет даже о десятках миллионов документов.</p>
+                        <p>Примерно 20% сетевых папок доступны для всех пользователей, при этом около 39% организаций имеют более 10 тыс. устаревших, но еще активных учетных записей. Неудивительно, что в подобной ситуации у двух третей компаний более 1 тыс. конфиденциальных файлов открыто для каждого сотрудника, а у 60% респондентов обнаружилось не менее 500 паролей, срок действия которых никогда не истекает. Парольная политика не имеет прямого отношения к классификации данных, но она тоже иллюстрирует сложившийся бардак.</p>
+                        <p>Кроме файловых ресурсов домена Active Directory, в корпоративной инфраструктуре есть разнообразные информационные системы со своими базами данных. Настройка безопасного доступа к этим системам – отдельная головная боль. Компании покупают антивирусы, межсетевые экраны нового поколения, решения для поведенческого анализа и управления мобильными устройствами, а также другие дорогостоящие продукты для защиты информации. Прежде чем настраивать доступ, необходимо упорядочить хаос: хотя классификация данных сама по себе проблему не решит, она является основой любой эффективной системы обеспечения информационной безопасности.</p>
+                        <h3>Как решить проблему малой кровью?</h3>
+                        <p>Самый очевидный способ классифицировать данные – провести ручной аудит силами ИТ-департамента. Такой подход прекрасно работает в небольших фирмах с десятками пользователей.</p>
+                        <p>В средних и крупных компаниях переложить проблему на хрупкие плечи сисадминов не получится: слишком много цифровой информации нажито непосильным трудом, а ее структура слишком сложна и разнообразна.</p>
+                        <p>К тому же это не разовая работа, после первоначального наведения порядка возникнет задача актуализации сведений и мониторинга изменений.</p>
+                        <p>Пользователи не любят соблюдать правила и будут постоянно "подсыпать в топку свежего уголька", да и конфигурация ресурсов в ИТ-инфраструктуре периодически меняется. За всем нужно следить: увы, грамотная классификация данных – это непрерывный процесс, а не законченный объект. Как, впрочем, и все, связанное с информационной безопасностью.</p>
+                        <h3>Чем поможет автоматизация?</h3>
+                        <p>На этом этапе мы приходим к необходимости внедрения специализированных решений, позволяющих не только провести разовый аудит, но и отслеживающих все изменения в реальном времени. В них используются разные методы: морфологический анализ, проставление специальных меток (O365/M365, Boldon James, TITUS) и тому подобные вещи – выбор набора технологий зависит от разработчика.</p>
+                        <p>Система классификации с определенной периодичностью отслеживает изменения в документах, где бы те ни находились, разбирает по полочкам логику их построения и анализирует данные с использованием заданных правил.</p>
+                        <p>Частота проверок сетевых ресурсов настраивается в зависимости от многих факторов, но стратегия подбирается таким образом, чтобы получать информацию об изменениях максимально оперативно.</p>
+                        <p>Система классификации должна также взаимодействовать с другими информационными системами и облачными сервисами. В частности, большинство систем ЭДО и ERP хранят информацию в обычных файлах с определенной структурой и логикой размещения – они могут быть без особого труда проанализированы. В каких-то случаях требуется и прямой доступ – вариантов масса.</p>
+                        <p>Необходима также интеграция со средствами обеспечения информационной безопасности и контроля доступа, поскольку одной только классификации недостаточно, ее еще нужно правильно применить, допустив к определенной категории информации только пользователей, которым та необходима для работы. Настроив взаимодействие с DLP, можно передавать туда критичные документы для снятия цифровых отпечатков и контроля прохождения похожих на внешнем периметре. Есть и другие примеры взаимодействия; важно понимать, что эффективно лишь продуманное применение всех мер в комплексе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-row d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Согласие на обработку данных</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Служба поддержки</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="row footer-row">
+                <div class="col d-flex justify-content-center pt-3 footer-copyright">&copy; infsec.site, 2021 | InfSec - онлайн-ресурс для обучения информационной безопасности</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

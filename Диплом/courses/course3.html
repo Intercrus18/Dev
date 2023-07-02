@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс - Основы информационной безопасности</title>
+    <link rel="icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center header-navbar">
+                <div class="col-2">
+                    <a href="../index.html" class="logo-link">
+                        <img src="../img/icons/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- /.col -->
+                <div class="col-4">
+                    <nav class="nav">
+                        <ul class="menu d-flex">
+                            <li class="menu-item"><a href="../articles.html" class="menu-link">Статьи</a></li>
+                            <li class="menu-item"><a href="../courses.html" class="menu-link">Курсы</a></li>
+                            <li class="menu-item"><a href="../tests.html" class="menu-link">Тесты</a></li>
+                            <li class="menu-item"><a href="" class="menu-link" id="random-link">Случайное</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.col -->
+                <div class="col d-flex justify-content-end align-items-center">
+                    <div class="icons">
+                        <a href="#" class="icon-link"><img src="../img/icons/vk-icon.svg" alt="icon vk link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/youtube-icon.svg" alt="icon youtube link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/fb-icon.svg" alt="icon fb link" class="icon-img"></a>
+                    </div>
+                    <div class="input-group">
+                        <input type="search" class="form-control rounded" placeholder="Искать здесь..." aria-label="Search"
+                          aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-primary search-btn">Искать</button>
+                      </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </header>
+    <main class="articles-main">
+        <div class="container">
+            <div class="row articles-row-wrapper">
+                <div class="col-3 course-col-sidebar">
+                    <h2 class="course-sidebar-title d-flex justify-content-center">Сожержание</h2>
+                    <ul>
+                        <li><button onclick="viewSection1()" class="sidebar-title-button" id="sidebutton1">1. Введение</button></li>
+                        <li><button onclick="viewSection2()" class="sidebar-title-button" id="sidebutton2">2. Зачем мне знания о криптографии и зачем изучать старые шифры?</button></li>
+                        <li><button onclick="viewSection3()" class="sidebar-title-button" id="sidebutton3">3. Исторические шифры и первые шифраторы</button></li>
+                        <li><button onclick="viewSection4()" class="sidebar-title-button" id="sidebutton4">4. Шифр сдвига</button></li>
+                        <li><button onclick="viewSection5()" class="sidebar-title-button" id="sidebutton5">5. Шифр замены</button></li>
+                    </ul>
+                    
+                </div>
+                <div class="col-9 articles-col-main">
+                    <h2 class="row articles-main-title d-flex justify-content-center">Введение в криптографию и шифрование. Часть первая</h2>
+
+                    <!-- c1s1 - course №1 section №1 -->
+                    <div class="row course-main-text" id="c1s1">
+                        <h3>Введение</h3>
+                        <p>Архаичные шифраторы канули в Лету, чего нельзя сказать об алгоритмах шифрования. Операции сдвига, замены и перестановки до сих пор применяются в современных алгоритмах, однако с существенной поправкой в стойкости. За многие столетия, прошедшие со времен первого применения этих шифров, криптографы научились оценивать количество информации, энтропию и стойкость, однако так было не всегда. Рассмотрим подробнее, как работают самые популярные шифры в истории криптографии и в чем их недостатки.</p>
+                        <P>В современном обществе, где почти каждый человек имеет электронный девайс (а то и не один), где каждую минуту совершаются операции с электронной валютой, пересылаются конфиденциальные email, подписываются электронные документы, криптография нужна как воздух. Нужна пользователям, чтобы защитить свою приватность. Нужна программистам, чтобы обеспечить безопасность проектируемых систем. Нужна хакерам, чтобы при аудите понимать уязвимые места в системах. Нужна админам, чтобы представлять, чем и как лучше защищать корпоративные данные. Мы не могли обойти стороной такую важную тему и начинаем цикл статей, посвященный введению в криптoграфию. Для новичков — самый простой путь познакомиться с криптой, для профи — хороший повод систематизировать свои знания. Шесть уроков, от самого простого к сложному. Вперед!</P>
+                        <h3>Термины</h3>
+                        <p>Для начала давай определимся с терминологией:</p>
+                        <ul>
+                            <li>Криптография — это наука о том, как обеспечить секретность сообщения.</li>
+                            <li>Криптоанализ — это наука о том, как вскрыть зашифрованное сообщение, не зная ключа.</li>
+                            <li>Дешифровка — это процeсс получения открытого текста средствами криптоанализа.</li>
+                            <li>Расшифрование — это процесс получения открытого текста с использованием ключа и алгоритма расшифрования, предусмотренного для данного шифра.</li>
+                        </ul>
+                    </div>
+                    <div class="row course-main-text" id="c1s2">
+                        <h3>Зачем мне знания о криптографии?</h3>
+                        <p>Предположим, криптография очень нужна, но пусть ей займутся дядьки с усами математики. Зачем же мне знания по криптографии?</p>
+                        <p>Если ты обычный пользователь — то как минимум, чтобы обеспечить свою приватность. Сегодня крупным государствам и влиятельным организациям становятся доступны средства тотального надзора за миллионами людей. Поэтому криптография оказывается важнейшим инструментом, обеспечивающим конфиденциальность, доверие, целостность, авторизацию сообщений и электронных платежей. Повсеместное распространение криптографии останется одним из немногих способов защитить пользователя от угроз, нависающих над его конфиденциальной информацией. Зная, как работает тот или иной протокол или шифр, чем он хорош и где его слабые места, ты сможешь оcознанно выбирать инструменты для работы или просто общения в Сети.</p>
+                        <p>Если ты программист или специалист по ИБ, то здесь вообще от криптографии никуда не скрыться. Любой крупный проект требует обеспечения безопасности информации. Неважно, что ты разрабатываешь: контентный сервис, почтовик, мессенджер, соцсеть или просто интернет-магазин, — везде есть критичные данные, которые надо защищать от перехвата или угона БД. Каждая операция должна быть защищена криптографическими протоколами. В этом случае криптография — подходящий инструмент. Если ты еще с ней не столкнулся, будь уверен — это на 100% лишь вопрос времени.</p>
+                        <p>Короче говоря, криптография используется гораздо чаще, чем можно себе представить. Поэтому пора снять завесу тайны с этой науки, познакомиться с наиболее интересными аспектами и использовать ее возможности себе на пользу.</p>
+                        <h3>Зачем изучать старые шифры?</h3>
+                        <p>В интернете криптографические протоколы используются практически при каждом запросе. Но как же дело обстояло, когда интернета не было и в помине? Не стоит думать, что в те далекие лохматые времена не было криптографии. Первые способы шифрования появились около четырех тысяч лет назад. Конечно, это были самые примитивные и нестойкие шифры, однако и население тогда было малограмотное, так что такие способы могли защитить информацию от любопытных глаз.</p>
+                        <p>Люди всегда нуждались в секретной переписке, поэтому шифрование не стояло на месте. С раскрытием одних шифров придумывали другие, более стойкие. На смену бумажным шифрам пришли шифровальные машины, которым не было равных среди людей. Даже опытному математику не удавалось взломать шифр, рассчитанный на роторной машине. С появлением первых компьютеров требования к защите информации возросли многократно.</p>
+                        <p>Зачем же нам знакомиться с такими древними и нестойкими шифрами, если можно сразу прочитать про DES и RSA — и вуаля, почти специалист? Изучение первых шифров поможет лучше понять, зачем нужна та или иная операция в современном алгоритме шифрования. Например, шифр перестановки, один из первых примитивных алгоритмов, не был забыт, и перестановка — одна из часто встречающихся операций в современном шифровании. Таким образом, чтобы лучше осознать, откуда на самом деле растут ноги у современных алгоритмов, нужно оглянуться на несколько тысяч лет назад.</p>
+                    </div>
+                    <div class="row course-main-text" id="c1s3">
+                        <h3>Исторические шифры и первые шифраторы</h3>
+                        <p>Согласно источникам, первые способы шифрования текста появились вместе с зарождением письменности. Способы тайного письма применялись древними цивилизациями Индии, Месопотамии и Египта. В письменах Древней Индии упоминаются способы изменения текста, которые использовали не только правители, но и ремесленники, желающие скрыть секрет мастерства. Истоком криптографии считается использование специальных иероглифов в древнеегипетской письменности около четырех тысячелетий назад.</p>
+                        <p>Первым шифром, зародившимся в древних цивилизациях и актуальным, в некотором роде, и по сей день, можно считать шифр замены. Чуть позже был придуман шифр сдвига, который применялся Юлием Цезарем, почему и был назван в его честь.</p>
+                        <p>Помимо шифров, нельзя не упомянуть о приборах для шифрования, которые разрабатывали древние математики. Например, скитала — первый шифратор, разработанный в Спарте. Представлял собой палку, на которую по всей длине наматывалась лента пергамента. Текст наносился вдоль оси палки, после чего пергамент снимался, и получалось шифрованное сообщение. Ключом служил диаметр палки. Однако такой способ шифрования был абсолютно нестойким — автором взлома стал Аристотель. Он наматывал ленту пергамента на конусообразную палку до тех пор, пока не появлялись отрывки читаемого текста.</p>
+                        <p>Также ярким примером из мира древних шифраторов может стать диск Энея — диск с отверстиями по количеству букв в алфавите. Нитка протягивалась последовательно в те отверстия, которые соответствовали буквам сообщения. Получатель вытаскивал нитку, записывал последовательность букв и читал секретное послание. Однако этот шифратор обладал существенным недостатком — достать нитку и разгадать послание мог кто угодно.</p>
+                    </div>
+                    <div class="row course-main-text" id="c1s4">
+                        <h3>Шифр сдвига</h3>
+                        <p>Это один из самых первых типов шифра. Процесс шифрования очень прост. Он заключается в замене каждой буквы исходного сообщения на другую, отстоящую от исходной на заданное количество позиций в алфавите. Это количество позиций называется ключом. При ключе, равном трем, этот метод называется шифром Цезаря. Император использовал его для секретной переписки. Для того чтобы зашифровать сообщение, нужно построить таблицу подстановок:</p>
+                        <img src="../img/courses/c3img1.jpg" alt="img: таблица подстановок">
+                        <p>Как видишь, во втором ряду символы алфавита сдвинуты на три позиции «назад». Чтобы зашифровать сообщение, для каждого символа исходного текста нужно взять соответствующий ему символ из таблицы подстановки.</p>
+                        <p>Пример шифра:</p>
+                        <p>Исходный текст: Hi, Brut! How are you?</p>
+                        <p>Шифрованный текст: Kl, Euxw! Krz duh brx?</p>
+                        <p>Расшифрование:</p>
+                        <p>На этапе расшифрования мы имеем шифрованный текст и ключ, равный трем. Чтобы получить исходный текст, ищем для каждого символа сдвиг на три позиции к началу алфавита. Так, для первого символа K сдвиг три будет означать символ H. Далее посимвольно расшифровываем текст, пока не получаем исходную фразу Hi, Brut! How are you?.</p>
+                        <p>Криптоанализ:</p>
+                        <p>Легче всего такой шифр взломать простым перебором всех возможных значений ключа — их всего 25. Здесь все просто, и останавливаться смысла нет.</p>
+                        <p>Другой вариант — использовать частотный анализ текста. Для каждого языка есть статистическая информация о частоте употребления каждой буквы алфавита и наиболее часто встречающихся сочетаний букв. Для английского, например, среднестатистические частоты употребления букв таковы:</p>
+                        <img src="../img/courses/c3img2.jpg" alt="img: частоты употребления букв">
+                        <p>Что касается двухбуквенных сочетаний (биграмм), то можно заметить следующую тенденцию:</p>
+                        <img src="../img/courses/c3img3.jpg" alt="img: биграммы">
+                        <p>Идея в том, что в зашифрованном тексте самой часто встречаемой буквой будет не эталонная e, а что-то другое. Соответственно, нам нужно найти самую часто встречаемую букву в нашем шифре. Это и будет зашифрованная е. А дальше нужно подсчитать ее сдвиг от е в таблице подстановок. Полученное значение и есть наш ключ!</p>
+                    </div>
+                    <div class="row course-main-text" id="c1s5">
+                        <h3>Шифр замены</h3>
+                        <p>Основной недостаток шифра сдвига заключается в том, что есть всего 25 возможных значений ключа. Даже Цезарь начал подозревать, что его шифр не самая лучшая идея. Поэтому на смену ему пришел шифр замены. Для того чтобы воспользоваться этим алгоритмом, создается таблица с исходным алфавитом и, непосредственно под ним, тот же алфавит, но с переставленными буквами (или любой другой набор знаков):</p>
+                        <img src="../img/courses/c3img4.jpg" alt="img: таблица">
+                        <p>Пример шифра:</p>
+                        <p>Действуем аналогично предыдущему шифру. Для каждого символа исходного текста берем соответствующий ему из таблицы подстановки:</p>
+                        <p>Исходный текст: Hi, Brut! How are you?</p>
+                        <p>Шифрованный текст: Vl, Enfh!Vrz bnw drf?</p>
+                        <p>Расшифрование:</p>
+                        <p>При расшифровании заменяем каждый символ шифротекста соответствующим символом из известной нам таблицы подстановки: v => h, l => i и так далее. После чего получаем исходную строку Hi, Brut! How are you?.</p>
+                        <p>Криптоанализ:</p>
+                        <p>Криптоанализ этого шифра также выполняется методом частотного анализа текста. Рассмотрим пример:</p>
+                        <p>MRJGRJ LK HVW XBSLHBM RI QNWBH ENLHBLJ, LHK SRMLHLXBM, WXRJRPLX, BJG XRPPWNXLBM XWJHNW. LH LK RJW RI HVW MBNQWKH XLHLWK LJ HVW ZRNMG BJG HVW MBNQWKH XLHD LJ WFNRSW. LHK SRSFMBHLRJ LK BERFH 8 PLMMLRJ. MRJGRJ LK GLYLGWG LJHR KWYWNBM SBNHK: HVW XLHD, ZWKHPLJKHWN, HVW ZWKH WJG, BJG HVW WBKH WJG. HVW VWBNH RI MRJGRJ LK HVW XLHD, LHK ILJBJXLBM BJG EFKLJWKK XWJHNW. JFPWNRFK EBJUK, RIILXWK, BJG ILNPK BNW KLHFBHWG HVWNW, LJXMFGLJQ HVW EBJU RI WJQMBJG, HVW KHRXU WAXVBJQW, BJG HVW RMG EBLMWD. IWZ SWRSMW MLYW VWNW, EFH RYWN B PLMMLRJ SWRSMW XRPW HR HVW XLHD HR ZRNU. HVWNW BNW KRPW IBPRFK BJXLWJH EFLMGLJQK ZLHVLJ HVW XLHD. SWNVBSK HVW PRKH KHNLULJQ RI HVWP LK HVW KH. SBFM\'K XBHVWGNBM, HVW QNWBHWKH RI WJQMLKV XVFNXVWK. LH ZBK EFLMH LJ HVW 17HV XWJHFND ED KLN XVNLKHRSVWN ZNWJ. HVW HRZWN RI MRJGRJ ZBK IRFJGWG ED OFMLFK XBWKBN BJG LJ 1066 NWEFLMH ED ZLMMLBP HVW XRJTFWNRN. LH ZBK FKWG BK B IRNHNWKK, B NRDBM SBMBXW, BJG B SNLKRJ. JRZ LH LK B PFKWFP.</p>
+                        <p>Частотный анализ букв этого шифра показывает следующее (читай построчно, буквы сортированы по частоте использования):</p>
+                        <p>
+    <pre> 
+    W — 88, H — 74, L — 67, J — 55, B — 54, K — 52,
+    R — 51, N — 41, M — 36, V — 35, X — 29, G — 27,
+    F — 23, P — 16, S — 16, I — 15, Z — 13, E — 13,
+    D — 11, Q — 10, U — 5,  Y — 4,  T — 1,  O — 1,
+    A — 1</pre>         </p>
+                        <p>Вероятно, что W => e, так как это самая часто встречающаяся буква в шифре (смотри таблицу среднестатистических частот использования букв для английского языка в предыдущем шифре).</p>
+                        <p>Дальше пробуем найти наиболее короткое слово, куда входит уже известная нам буква W => e. Видим, что сочетание HVW чаще всего встречается в шифре. Нетрудно догадаться, что, скорее всего, это триграмма the, то есть в тексте мы уже определили три символа. Если посмотреть на промежуточный результат, сомнений не остается:</p>
+                        <p>MRJGRJ LK the XBSLtBM RI QNeBt ENLtBLJ, LtK SRMLtLXBM, eXRJRPLX, BJG XRPPeNXLBM XeJtNe. Lt LK RJe RI the MBNQeKt XLtLeK LJ the ZRNMG BJG the MBNQeKt XLtD LJ eFNRSe. LtK SRSFMBtLRJ LK BERFt 8 PLMMLRJ. MRJGRJ LK GLYLGeG LJtR KeYeNBM SBNtK: the XLtD, ZeKtPLJKteN, the ZeKt eJG, BJG the eBKt eJG. the heBNt RI MRJGRJ LK the XLtD, LtK ILJBJXLBM BJG EFKLJeKK XeJtNe. JFPeNRFK EBJUK, RIILXeK, BJG ILNPK BNe KLtFBteG theNe, LJXMFGLJQ the EBJU RI eJQMBJG, the KtRXU eAXhBJQe, BJG the RMG EBLMeD. IeZ SeRSMe MLYe heNe, EFt RYeN B PLMMLRJ SeRSMe XRPe tR the XLtD tR ZRNU. theNe BNe KRPe IBPRFK BJXLeJt EFLMGLJQK ZLthLJ the XLtD. SeNhBSK the PRKt KtNLULJQ RI theP LK the Kt. SBFM\'K XBtheGNBM, the QNeBteKt RI eJQMLKh XhFNXheK. Lt ZBK EFLMt LJ the 17th XeJtFND ED KLN XhNLKtRSheN ZNeJ. the tRZeN RI MRJGRJ ZBK IRFJGeG ED OFMLFK XBeKBN BJG LJ 1066 NeEFLMt ED ZLMMLBP the XRJTFeNRN. Lt ZBK FKeG BK B IRNtNeKK, B NRDBM SBMBXe, BJG B SNLKRJ. JRZ Lt LK B PFKeFP.</p>
+                        <p>Отлично, уже известны три буквы. Снова ищем наиболее короткие слова с новыми известными нам подстановками. Сочетание it является частоупотребляемым, и, поскольку буква t уже дешифрована (HVW => the), очевидно, что в нашем тексте L => i (LH => it). После этого обращаемся к поиску биграмм is и to, устанавливаем, что K => s, R => o. Затем обращаем внимание на триграммы ~ing и and. Анализ текста показывает, что BJG, скорее всего, шифротекст от and. После замены всех наиболее часто встречающихся символов получаем текст:</p>
+                        <p>Mondon is the XaSitaM oI QNeat ENitain, its SoMitiXaM, eXonoPiX, and XoPPeNXiaM XentNe. it is one oI the MaNQest Xities in the ZoNMd and the MaNQest XitD in eFNoSe. its SoSFMation is aEoFt 8 PiMMion. Mondon is diYided into seYeNaM SaNts: the XitD, ZestPinsteN, the Zest end, and the east end. the heaNt oI Mondon is the XitD, its IinanXiaM and EFsiness XentNe. nFPeNoFs EanUs, oIIiXes, and IiNPs aNe sitFated theNe, inXMFdinQ the EanU oI enQMand, the stoXU eAXhanQe, and the oMd EaiMeD. IeZ SeoSMe MiYe heNe, EFt oYeN a PiMMion SeoSMe XoPe to the XitD to ZoNU. theNe aNe soPe IaPoFs anXient EFiMdinQs Zithin the XitD. SeNhaSs the Post stNiUinQ oI theP is the st. SaFM\'s XathedNaM, the QNeatest oI enQMish XhFNXhes. it Zas EFiMt in the 17th XentFND ED siN XhNistoSheN ZNen. the toZeN oI Mondon Zas IoFnded ED OFMiFs XaesaN and in 1066 NeEFiMt ED ZiMMiaP the XonTFeNoN. it Zas Fsed as a IoNtNess, a NoDaM SaMaXe, and a SNison. noZ it is a PFseFP.</p>
+                        <p>Далее действуя аналогично или просто подбирая буквы по смыслу, находим исходный текст:</p>
+                        <p>London is the capital of Great Britain, its political, economic, and commercial centre. It is one of the largest cities in the world and the largest city in Europe. Its population is about 8 million. London is divided into several parts: the City, Westminster, the West End, and the East End. The heart of London is the City, its financial and business centre. Numerous banks, offices, and firms are situated there, including the Bank of England, the Stock Exchange, and the Old Bailey. Few people live here, but over a million people come to the City to work. There are some famous ancient buildings within the City. Perhaps the most striking of them is the St. Paul's Cathedral, the greatest of English churches. It was built in the 17th century by Sir Christopher Wren. The Tower of London was founded by Julius Caesar and in 1066 rebuilt by William the Conqueror. It was used as a fortress, a royal palace, and a prison. Now it is a museum.</p>
+                        <p>Как видишь, в этом криптоанализе нашим главным инструментом был статистический анализ частот.</p>
+                        <a href="../Tests/test2.html" class="button">Пройти тест по данному курсу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-row d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Согласие на обработку данных</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Служба поддержки</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="row footer-row">
+                <div class="col d-flex justify-content-center pt-3 footer-copyright">&copy; infsec.site, 2021 | InfSec - онлайн-ресурс для обучения информационной безопасности</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

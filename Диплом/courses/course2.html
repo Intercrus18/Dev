@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс - Основы информационной безопасности</title>
+    <link rel="icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center header-navbar">
+                <div class="col-2">
+                    <a href="../index.html" class="logo-link">
+                        <img src="../img/icons/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- /.col -->
+                <div class="col-4">
+                    <nav class="nav">
+                        <ul class="menu d-flex">
+                            <li class="menu-item"><a href="../articles.html" class="menu-link">Статьи</a></li>
+                            <li class="menu-item"><a href="../courses.html" class="menu-link">Курсы</a></li>
+                            <li class="menu-item"><a href="../tests.html" class="menu-link">Тесты</a></li>
+                            <li class="menu-item"><a href="" class="menu-link" id="random-link">Случайное</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.col -->
+                <div class="col d-flex justify-content-end align-items-center">
+                    <div class="icons">
+                        <a href="#" class="icon-link"><img src="../img/icons/vk-icon.svg" alt="icon vk link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/youtube-icon.svg" alt="icon youtube link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/fb-icon.svg" alt="icon fb link" class="icon-img"></a>
+                    </div>
+                    <div class="input-group">
+                        <input type="search" class="form-control rounded" placeholder="Искать здесь..." aria-label="Search"
+                          aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-primary search-btn">Искать</button>
+                      </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </header>
+    <main class="articles-main">
+        <div class="container">
+            <div class="row articles-row-wrapper">
+                <div class="col-3 course-col-sidebar">
+                    <h2 class="course-sidebar-title d-flex justify-content-center">Сожержание</h2>
+                    <ul>
+                        <li><button onclick="viewSection1()" class="sidebar-title-button" id="sidebutton1">1. Введение</button></li>
+                        <li><button onclick="viewSection2()" class="sidebar-title-button" id="sidebutton2">2. Угрозы информационной безопасности, которые наносят наибольший ущерб</button></li>
+                        <li><button onclick="viewSection3()" class="sidebar-title-button" id="sidebutton3">3. Угрозы непосредственно информационной безопасности</button></li>
+                    </ul>
+                    
+                </div>
+                <div class="col-9 articles-col-main">
+                    <h2 class="row articles-main-title d-flex justify-content-center">Основы информационной безопасности. Часть 1: Виды угроз</h2>
+
+                    <!-- c1s1 - course №1 section №1 -->
+                    <div class="row course-main-text" id="c1s1">
+                        <img src="../img/courses/img1.jpeg" alt="">
+                        <p></p>
+                    </div>
+                    <div class="row course-main-text" id="c1s2">
+                        2Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс жизни эта даже выйти путь мир силуэт дороге диких!
+                    </div>
+                    <div class="row course-main-text" id="c1s3">
+                        3Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс жизни эта даже выйти путь мир силуэт дороге диких!
+                    </div>
+                    <div class="row course-main-text" id="c1s4">
+                        4Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс жизни эта даже выйти путь мир силуэт дороге диких!
+                    </div>
+                    <div class="row course-main-text" id="c1s5">
+                        5Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Пояс жизни эта даже выйти путь мир силуэт дороге диких!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-row d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Согласие на обработку данных</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Служба поддержки</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="row footer-row">
+                <div class="col d-flex justify-content-center pt-3 footer-copyright">&copy; infsec.site, 2021 | InfSec - онлайн-ресурс для обучения информационной безопасности</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

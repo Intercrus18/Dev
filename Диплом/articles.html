@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfSec - все статьи</title>
+    <link rel="icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center header-navbar">
+                <div class="col-2">
+                    <a href="index.html" class="logo-link">
+                        <img src="img/icons/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <nav class="nav">
+                        <ul class="menu d-flex">
+                            <li class="menu-item"><a href="articles.html" class="menu-link">Статьи</a></li>
+                            <li class="menu-item"><a href="courses.html" class="menu-link">Курсы</a></li>
+                            <li class="menu-item"><a href="tests.html" class="menu-link">Тесты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col d-flex justify-content-end align-items-center">
+                    <div class="icons">
+                        <a href="#" class="icon-link"><img src="img/icons/vk-icon.svg" alt="icon vk link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="img/icons/youtube-icon.svg" alt="icon youtube link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="img/icons/fb-icon.svg" alt="icon fb link" class="icon-img"></a>
+                    </div>
+                    <div class="input-group">
+                        <input type="search" class="form-control rounded" placeholder="Искать здесь..." aria-label="Search"
+                          aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-primary search-btn">Искать</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="articles-main">
+        <div class="container">
+            <div class="row articles-row-wrapper">
+                <div class="col-3 articles-col-sidebar">
+                    <h2 class="articles-sidebar-title d-flex justify-content-center">Популярные статьи</h2>
+                    <div class="articles-col-blocks d-flex align-items-center flex-column">
+                        <div class="articles-col-block">
+                            <img src="img/articles/art1.jpeg" alt="" class="articles-block-image">
+                            <a href="articles/article1.html" class="articles-block-descr">Усиливаем безопасность парольных политик Microsoft</a>
+                        </div>
+                        <div class="articles-col-block">
+                            <img src="img/articles/art2.jpg" alt="" class="articles-block-image">
+                            <a href="articles/article2.html" class="articles-block-descr">Как собрать данные при расследовании киберинцидентов</a>
+                        </div>
+                        <div class="articles-col-block">
+                            <img src="img/articles/art3.jpg" alt="" class="articles-block-image">
+                            <a href="articles/article3.html" class="articles-block-descr">Классификация данных как фундамент ИБ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 articles-col-main">
+                    <h2 class="row articles-main-title d-flex justify-content-center">Все статьи</h2>
+                    <div class="row articles-main-courses">
+                        <div class="col d-flex justify-content-around">
+                            <div class="articles-col-block">
+                                <img src="img/articles/art1.jpeg" alt="" class="articles-block-image">
+                                <a href="articles/article1.html" class="articles-block-descr">Усиливаем безопасность парольных политик Microsoft</a>
+                            </div>
+                            <div class="articles-col-block">
+                                <img src="img/articles/art3.jpg" alt="" class="articles-block-image">
+                                <a href="articles/article3.html" class="articles-block-descr">Классификация данных как фундамент ИБ</a>
+                            </div>
+                            <div class="articles-col-block">
+                                <img src="img/articles/art2.jpg" alt="" class="articles-block-image">
+                                <a href="articles/article2.html" class="articles-block-descr">Как собрать данные при расследовании киберинцидентов</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row articles-main-courses">
+                        <div class="col d-flex justify-content-around">
+                            <div class="articles-col-block">
+                                <img src="img/articles/art4.jpg" alt="" class="articles-block-image">
+                                <a href="articles/article5.html" class="articles-block-descr">Часто задаваемые вопросы об утечках</a>
+                            </div>
+                            <div class="articles-col-block">
+                                <img src="img/articles/art5.jpg" alt="" class="articles-block-image">
+                                <a href="articles/article5.html" class="articles-block-descr">Межсетевые экраны: пять правил эффективной работы</a>
+                            </div>
+                            <div class="articles-col-block">
+                                <img src="img/articles/art6.jpg" alt="" class="articles-block-image">
+                                <a href="articles/article6.html" class="articles-block-descr">Как сократить число уязвимостей при разработке приложений</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-row d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Согласие на обработку данных</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Служба поддержки</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="row footer-row">
+                <div class="col d-flex justify-content-center pt-3 footer-copyright">&copy; infsec.site, 2021 | InfSec - онлайн-ресурс для обучения информационной безопасности</div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

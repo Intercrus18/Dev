@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfSec - все статьи</title>
+    <link rel="icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center header-navbar">
+                <div class="col-2">
+                    <a href="../index.html" class="logo-link">
+                        <img src="../img/icons/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- /.col -->
+                <div class="col-4">
+                    <nav class="nav">
+                        <ul class="menu d-flex">
+                            <li class="menu-item"><a href="../articles.html" class="menu-link">Статьи</a></li>
+                            <li class="menu-item"><a href="../courses.html" class="menu-link">Курсы</a></li>
+                            <li class="menu-item"><a href="../tests.html" class="menu-link">Тесты</a></li>
+                            <li class="menu-item"><a href="" class="menu-link" id="random-link">Случайное</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /.col -->
+                <div class="col d-flex justify-content-end align-items-center">
+                    <div class="icons">
+                        <a href="#" class="icon-link"><img src="../img/icons/vk-icon.svg" alt="icon vk link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/youtube-icon.svg" alt="icon youtube link" class="icon-img"></a>
+                        <a href="#" class="icon-link"><img src="../img/icons/fb-icon.svg" alt="icon fb link" class="icon-img"></a>
+                    </div>
+                    <div class="input-group">
+                        <input type="search" class="form-control rounded" placeholder="Искать здесь..." aria-label="Search"
+                          aria-describedby="search-addon" />
+                        <button type="button" class="btn btn-outline-primary search-btn">Искать</button>
+                      </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </header>
+    <main class="articles-main">
+        <div class="container">
+            <div class="row articles-row-wrapper">
+                <div class="col-3 articles-col-sidebar">
+                    <h2 class="articles-sidebar-title d-flex justify-content-center">Популярные статьи</h2>
+                    <div class="articles-col-blocks d-flex align-items-center flex-column">
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art1.jpeg" alt="" class="articles-block-image">
+                            <a href="article1.html" class="articles-block-descr">Усиливаем безопасность парольных политик Microsoft</a>
+                        </div>
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art3.jpg" alt="" class="articles-block-image">
+                            <a href="article3.html" class="articles-block-descr">Как собрать данные при расследовании киберинцидентов</a>
+                        </div>
+                        <div class="articles-col-block">
+                            <img src="../img/articles/art4.jpg" alt="" class="articles-block-image">
+                            <a href="article4.html" class="articles-block-descr">Часто задаваемые вопросы об утечках</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 articles-col-main">
+                    <h2 class="row articles-main-title d-flex justify-content-center">Как собрать данные при расследовании киберинцидентов</h2>
+                    <div class="row articles-main-courses">
+                        <p>Целевые кибератаки (APT, Advanced Persistent Threat) проводятся хорошо подготовленными группировками, однако они тоже оставляют следы. В интересах компании-жертвы максимально оперативно привлечь специалистов по киберкриминалистике (форензике) для анализа рабочих станций. Расскажем, как собрать данные для грамотного расследования киберинцидента.</p>
+                        <h3>Введение</h3>
+                        <p>Согласно отчёту IBM за 2019 год, в среднем из-за действий хакеров предприятия несут убытки в размере 239 миллионов долларов. Однако финансовые потери — не единственное, о чём стоит беспокоиться. Компаниям требуется около 512 часов (примерно 22 дня), чтобы восстановить работоспособность своих систем, что влечёт за собой невозможность вести дела в штатном режиме и немалый урон репутации.</p>
+                        <p>Так, например, норвежская компания Norsk Hydro, занимающаяся производством алюминия, в марте 2019 года подверглась атаке злоумышленников, использовавших шифровальщик LockerGoga. Результатом стали финансовый ущерб почти в 66 миллионов долларов, а также остановленное производство на части фабрик и временный переход в ручной режим работы.</p>
+                        <p>Помимо вирусов-шифровальщиков опасность представляют троянские и шпионские программы, перехватчики и многое другое.</p>
+                        <p>Атаки организованных группировок носят название APT (Advanced Persistent Threat), что в переводе означает «целевая кибератака». Такие инциденты — серьёзная проблема в сфере информационной безопасности, которая беспокоит не только крупные корпорации: под прицелом хакеров находятся также предприятия среднего и малого бизнеса.</p>
+                        <p>В сегодняшней статье мы поговорим о стратегии реагирования на атаку, о том, какие утилиты обязательно должны быть в арсенале любого отдела информационной безопасности, и о том, есть ли универсальный инструмент для расследования инцидентов.</p>
+                        <h3>Кибератака. Разбираемся, что происходит</h3>
+                        <p>Организованные группировки выбирают целью кибератак компании в разнообразных сферах, таких как здравоохранение, ИТ, образование и другие. Одной из основных и наиболее часто встречающихся задач преступников является кража конфиденциальных сведений и дальнейшая их продажа. Как же хакеры попадают в корпоративную сеть и, тем более, как в их руках оказываются важные данные?</p>
+                        <p>Физические носители потеряли свою актуальность, поэтому на современном этапе можно выделить три основных канала проникновения вредоносных программ в сеть. Первый — подбор пароля к виртуальной частной сети (VPN) и / или удалённому рабочему столу (RDP), второй — переход пользователя по заражённым ссылкам в каких-либо браузерах, третий, наиболее распространённый, — рассылка фишинговых писем.</p>
+                        <p>Исходя из того что самым популярным вектором заражения являются фишинговые письма, типовая атака в большинстве случаев выглядит следующим образом: сотрудник получает на электронную почту письмо с вложением, которое имеет вполне ожидаемое для него имя: «Копии документов», «Зарплатная ведомость», «Товарная накладная» и др. Адрес электронной почты не вызывает подозрений, потому что был предварительно подделан так, что при беглом взгляде покажется сотруднику знакомым. Однако внутри письма — вовсе не документы, а тщательно замаскированный вредоносный код, исполнение которого приводит к началу заражения системы. Когда вирус закрепляется в компьютере жертвы, он соединяется со своим управляющим сервером и уведомляет злоумышленника об успешном проникновении в систему, после чего тот, используя реализованные во вредоносной программе функции, осуществляет задуманное.</p>
+                        <h3>Взгляд изнутри</h3>
+                        <p>Какие действия необходимо предпринять, если замечена подозрительная активность в корпоративной сети? В первую очередь следует незамедлительно приступить к сбору информации об инциденте. В ходе исследования необходимо выявить канал внедрения вредоносной программы в сеть (начальный вектор атаки), идентифицировать тип программного обеспечения, задействованного злоумышленниками, понять, какие системы пострадали, определить стадию атаки и размер полученного ущерба.</p>
+                        <p>Само по себе реагирование на кибератаку можно разделить на несколько шагов:</p>
+                        <ul>
+                            <li>обнаружение подозрительной активности на компьютере, предположительно вызванной деятельностью вредоносной программы;</li>
+                            <li>изоляция заражённой машины от корпоративной сети;</li>
+                            <li>сбор первичной информации о вирусе;</li>
+                            <li>удаление вредоносного объекта;</li>
+                            <li>приведение систем в первоначальное состояние;</li>
+                            <li>анализ итогов инцидента.</li>
+                        </ul>
+                        <p>Сбор информации является наиболее важным этапом расследования, так как от полученных в ходе этого этапа данных зависит вся дальнейшая работа отдела безопасности. Рассмотрим подробнее, какими инструментами можно воспользоваться для исследования персональных компьютеров.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-row d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Согласие на обработку данных</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Служба поддержки</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="row footer-row">
+                <div class="col d-flex justify-content-center pt-3 footer-copyright">&copy; infsec.site, 2021 | InfSec - онлайн-ресурс для обучения информационной безопасности</div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
